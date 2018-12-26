@@ -5,20 +5,25 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Главная</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="style.css" />
     <script src="main.js"></script>
 </head>
 <body>
+    <div class="wrapper">
     <header class="main-header">
-        <p class="telephon">8(4872)31-13-45</p>
-        <p>Экономьте время в вашем доме</p>
-        <ul class="send">
-            <li class="send_aplication">Оставить заявку</li>
-            <li class="send_resume">Отправить резюме</li>
+        <div class="top_header">
+            <p class="telephon">8(4872)31-13-45</p>
+            <p class="arc">Экономьте время в вашем доме</p>
+            <ul class="send">
+                <li class="send_aplication"><a href="">Оставить заявку</a></li>
+                <li class="send_resume"><a href="">Отправить резюме</a></li>
+            </ul>
+        </div>
             <nav class="navigation">
                 <ul class="main_menu">
                     <li><a href="index.html">Главная</a> </li>
-                    <li><a href="index.html">Подобрать персонал</a>
+                    <li class="main-menu_current"><a href="index.html">Подобрать персонал</a>
                         <ul class="drop-down_menu">
                             <li><a href="">О нас</a></li>
                             <li><a href="">Задать вопрос</a></li>
@@ -28,20 +33,44 @@
                     </li>
                     <li><a href="index.html">Цены</a> </li>
                     <a class="navigation_logo" >
-                        <img src="" width="" height="" alt="Логотип Ваш Дом">
+                        <img src="img/Внутренняя тень ЛОГО.png" width="" height="" alt="Логотип Ваш Дом">
+                        <img src="img/LOGO.png" width="" height="" alt="Логотип Ваш Дом">
                     </a>
                     <li><a href="index.html">Оставить заявку</a> </li>
                     <li><a href="index.html">Оставить вакансию</a> </li>
-                    <li><a href="index.html">Контакты</a> </li>
-                
+                    <li><a href="index.html">Контакты</a> </li>   
                 </ul>
-            </nav>
-        </ul>
+            </nav>       
     </header>
     <main class="container">
         <h1 class="visualy-hidden">Ваш Дом агенство домашнего персонала</h1>
         <section class="family">
-
+            <ul class="family_slide">
+                <li class="family_slide_li">
+                    <button class="family_slide_button">
+                        Первый слайд</button>
+                </li>
+                <li class="family_slide_li">
+                    <button class="family_slide_button">
+                        Второй слайд</button>
+                </li>
+                <li class="family_slide_li">
+                    <button class="family_slide_button">
+                        Третий слайд</button>
+                </li>
+                <li class="family_slide_li">
+                    <button class="family_slide_button">
+                        Четвёртый слайд</button>
+                </li>
+                <li class="family_slide_li">
+                    <button class="family_slide_button">
+                        Пятый слайд</button>
+                </li>
+                <li class="family_slide_li">
+                    <button class="family_slide_button">
+                        Шестой слайд</button>
+                </li>
+            </ul>
         </section>
         <section class="info_permanent_staff">
             <h2>Постоянный персонал</h2>
@@ -70,18 +99,20 @@
             <button type="button">Подробнее</button>
         </section>
         <section class="fotogallery">
-            <figure class="fotogalley_1">
-                <img src="" width="" height="" alt="Нянечка">
-            </figure>
-            <figure class="fotogalley_2">
-                <img src="" width="" height="" alt="Сиделка">
-            </figure>
-            <figure class="fotogalley_3">
-                <img src="" width="" height="" alt="Уборщица">
-            </figure>
-            <figure class="fotogalley_4">
-                <img src="" width="" height="" alt="Прислуга">
-            </figure>
+            <ul class="fotogallery_ul">
+                <li class="fotogallery_nanny">
+                    <img src="img/nanny.jpg" width="" height="" alt="Нянечка">
+                </li>
+                <li class="fotogallery_nurs">
+                    <img src="img/nurse.jpg" width="" height="" alt="Сиделка">
+                </li>
+                <li class="fotogallery_washerman">
+                    <img src="img/washerman.jpg" width="" height="" alt="Мойщица">
+                </li>
+                <li class="fotogallery_servant">
+                    <img src="img/servant.jpg" width="" height="" alt="Прислуга">
+                </li>
+            </ul>
         </section>
         <section class="text">
             <h2>Заголовок</h2>
@@ -141,10 +172,12 @@
             <li><a href="index.htm.">Подобрать персонал</a></li>
             <li><a href="index.html">Цены</a></li>
         </ul>
-        <section class="main-footer_bottom_section" >
+        <div class="main-footer_bottom" >
             <p class="telephon">8(4872)31-13-45</p> 
-            <p>Разработка и продвижение сайта компанией «Юни Веб»</p> 
-        </section>
+            <p class="small_text">Разработка и продвижение сайта компанией «Юни Веб»</p> 
+            <img class="logo_UW" src="img/logo_UW.png" width="" height="" alt="logo_UW" >
+        </div>
     </footer>
+    </div>
 </body>
 </html>
