@@ -4,10 +4,10 @@
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Главная</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="normalize.css">
-    <link rel="stylesheet" href="style.css" />
-    <script src="main.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="js/modal.js"></script>
 </head>
 <body>
     <div class="wrapper">
@@ -15,11 +15,9 @@
         <div class="container">
             <div class="top_header">
                 <p class="telephon">8(4872)31-13-45</p>
-                <p class="arc">Экономьте время в вашем доме</p>
                 <ul class="send">
                     <li class="send_aplication"><a class="button" href="">Оставить заявку</a></li>
-                    <li class="
-                    "><a class="button" href="">Отправить резюме</a></li>
+                    <li class="send_resume"><a class="button" href="">Отправить резюме</a></li>
                 </ul>
             </div>
         </div>
@@ -28,10 +26,10 @@
                     <li><a href="index.html">Главная</a> </li>
                     <li class="main-menu_current"><a href="index.html">Подобрать персонал</a>
                         <ul class="drop-down_menu">
-                            <li><a href="">О нас</a></li>
-                            <li><a href="">Задать вопрос</a></li>
-                            <li><a href="">Это интересно</a></li>
-                            <li><a href="">Отзывы</a></li>
+                            <li><a class="drop-down_menu_a" href="">О нас</a></li>
+                            <li><a class="drop-down_menu_a" href="">Задать вопрос</a></li>
+                            <li><a class="drop-down_menu_a active" href="">Это интересно</a></li>
+                            <li><a class="drop-down_menu_a" href="">Отзывы</a></li>
                         </ul>
                     </li>
                     <li><a href="index.html">Цены</a> </li>
@@ -74,7 +72,9 @@
             </section>
             <div class="info_staff">
                 <section class="info_permanent_staff">
-                <div class="info_permanent_staff_home" ></div>
+                <div class="info_permanent_staff_home_shadow">
+                  <div class="info_permanent_staff_home_substrate"></div>
+                </div>
                 <h2>Постоянный</br>персонал</h2>
                 <p>Наличие в доме обслуживающего
                     персонала - водителя, няни,
@@ -88,7 +88,9 @@
                 <button type="button" class="button">Подробнее</button>
                 </section>
                 <section class="info_temporary_staff">
-                    <div class="info_permanent_staff_clock" ></div>
+                    <div class="info_permanent_staff_clock_shadow" >
+                    <div class="info_permanent_staff_clock_substrate"></div>
+                  </div>
                     <h2>Временный</br>персонал</h2>
                     <p>Наличие в доме обслуживающего
                         персонала - водителя, няни,
@@ -189,28 +191,67 @@
         </footer>
     </div>
     <section class="modal modal_submit_applic">
-      <button class="modal_close"></button>
+      <button class="modal_close">Закрыть</button>
       <form class="form_modal_submit_applic" action="https://echo.htmlacademy.ru" method="POST">
-        <label for="fio"></label>
-        <input type="text" id="fio" name="fio" placeholder="ФИО"/>
-        <label for="telephon"></label>
-        <input type="telephon"/ id="telephon" name="telephon" placeholder="Телефон"/>
-        <select class="form_modal_submit_applic" id="form_modal_submit_applic">
-          <option value="nanny" selected>Няня</option>
-          <option value="governess">Гувернантка</option>
-          <option value="gardener">Садовник</option>
-        </select>
-        <select class="employment" id="employment">
-          <option value="" disabled selected>График работы</option>
-          <option value="full_employment">Полная занятость</option>
-          <option value="not_full_time">Неполная занятость</option>
-        </select>
-        <textarea placeholder="Дополнительная информация"></textarea>
-        <button type="submit">Отправить</button>
+        <p>
+          <label for="fio"></label>
+          <input type="text" id="fio" name="fio" placeholder="ФИО"/>
+        </p>
+        <p>
+          <label for="tel"></label>
+          <input type="tel" id="tel" name="telephon" placeholder="Телефон"/>
+        </p>
+        <p>
+          <select class="form_modal_submit_applic" id="form_modal_submit_applic">
+            <option value="tutor">Репетитор</option>
+            <option value="governess">Гувернантка</option>
+            <option value="nanny" selected>Няня</option>
+            <option value="driver">Водитель</option>
+            <option value="gardener">Садовник</option>
+          </select>
+        </p>
+        <p>
+          <select class="employment" id="employment">
+            <option value="full_employment">Полный день</option>
+            <option value="half_day">Пол дня</option>
+            <option value="schedule" selected>График работы</option>
+            <option value="several_hours">несколько часов</option>
+            <option value="around_the_clock">Круглосуточно</option>
+          </select>
+        </p>
+        <p>
+          <textarea placeholder="Дополнительная информация"></textarea>
+        </p>
+        <button type="submit" class="button">Отправить</button>
       </form>
     </section>
     <section class="modal modal_send_resume">
-      <button class="modal_close"></button>
+      <button class="modal_close">Закрыть</button>
+      <form class="form_modal_send_resume" action="https://echo.htmlacademy.ru" method="POST">
+        <p>
+          <label for="fio"></label>
+          <input type="text" id="fio" name="fio" placeholder="ФИО"/>
+        </p>
+        <p>
+          <label for="tel"></label>
+          <input type="tel" id="tel" name="telephon" placeholder="Телефон"/>
+        </p>
+        <p>
+          <select class="form_modal_send_resume" id="form_modal_send_resume">
+            <option value="" disabled selected>Должность</option>
+            <option value="nanny" >Няня</option>
+            <option value="governess">Гувернантка</option>
+            <option value="gardener">Садовник</option>
+          </select>
+        </p>
+        <p>
+          <label for="education"></label>
+          <input type="text" id="education" name="education" placeholder="Образование"/>
+          <label for="resume" class="resume_label">Прикрепить резюме</label>
+          <input type="file" class="resume" id="resume" name="resume"/>
+          <button type="submit" class="button">Отправить</button>
+        </p>
+      </form>
     </section>
 </body>
 </html>

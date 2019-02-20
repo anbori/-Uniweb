@@ -4,81 +4,70 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Подбор персонала</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="../normalize.css">
-    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="../css/style.min.css">
 </head>
 <body>
     <div class="wrapper">
         <header class="main-header">
-                    <div class="container">
-                        <div class="top_header">
-                            <p class="telephon">8(4872)31-13-45</p>
-                            <p class="arc">Экономьте время в вашем доме</p>
-                            <ul class="send">
-                                <li class="send_aplication"><a href="">Оставить заявку</a></li>
-                                <li class="send_resume"><a href="">Отправить резюме</a></li>
+            <div class="container">
+                <div class="top_header">
+                    <p class="telephon">8(4872)31-13-45</p>
+                    <ul class="send">
+                        <li class="send_aplication"><a class="button" href="">Оставить заявку</a></li>
+                        <li class="send_resume"><a class="button" href="">Отправить резюме</a></li>
+                    </ul>
+                </div>
+            </div>
+                <nav class="navigation">
+                    <ul class="main_menu">
+                        <li><a href="index.html">Главная</a> </li>
+                        <li class="main-menu_current"><a href="index.html">Подобрать персонал</a>
+                            <ul class="drop-down_menu">
+                                <li><a class="drop-down_menu_a" href="">О нас</a></li>
+                                <li><a class="drop-down_menu_a" href="">Задать вопрос</a></li>
+                                <li><a class="drop-down_menu_a active" href="">Это интересно</a></li>
+                                <li><a class="drop-down_menu_a" href="">Отзывы</a></li>
                             </ul>
-                        </div>
-                    </div>
-                        <nav class="navigation">
-                            <ul class="main_menu">
-                                <li><a href="index.html">Главная</a> </li>
-                                <li class="main-menu_current"><a href="index.html">Подобрать персонал</a>
-                                    <ul class="drop-down_menu">
-                                        <li><a href="">О нас</a></li>
-                                        <li><a href="">Задать вопрос</a></li>
-                                        <li><a href="">Это интересно</a></li>
-                                        <li><a href="">Отзывы</a></li>
-                                    </ul>
-                                </li>
-                                <li><a href="index.html">Цены</a> </li>
-                                <li class="navigation_logo" >
-                                    <a href="index.html">Логотип
-                                        <!-- <img src="img/Внутренняя тень ЛОГО.png" width="" height="" alt="Логотип Ваш Дом">
-                                        <img src="img/LOGO.png" width="" height="" alt="Логотип Ваш Дом"> -->
-                                    </a> 
-                                </li>    
-                                <li><a href="index.html">Оставить заявку</a> </li>
-                                <li><a href="index.html">Оставить вакансию</a> </li>
-                                <li><a href="index.html">Контакты</a> </li>   
-                            </ul>
-                        </nav>       
+                        </li>
+                        <li><a href="index.html">Цены</a> </li>
+                        <li class="navigation_logo" >
+                            <a href="index.html">Логотип</a>
+                        </li>
+                        <li><a href="index.html">Оставить заявку</a> </li>
+                        <li><a href="index.html">Оставить вакансию</a> </li>
+                        <li><a href="index.html">Контакты</a> </li>
+                    </ul>
+                </nav>
         </header>
         <main class="pick_ap_main_container">
             <h1 class="visually-hidden">Поможем подобрать персонал</h1>
             <section class="family">
-                    <div class="family_div">
-                    <figure class="family_slide">
-                        <img src="../img/1.png" alt="Семья">
-                    </figure>
-                <ul class="family_checkbox">
-                    <li class="family_checkbox_li">
-                        <button class="family_checkbox_button">
-                            Первый слайд</button>
-                    </li>
-                    <li class="family_checkbox_li">
-                        <button class="family_checkbox_button">
-                            Второй слайд</button>
-                    </li>
-                    <li class="family_checkbox_li">
-                        <button class="family_checkbox_button">
-                            Третий слайд</button>
-                    </li>
-                    <li class="family_checkbox_li">
-                        <button class="family_checkbox_button">
-                            Четвёртый слайд</button>
-                    </li>
-                    <li class="family_checkbox_li">
-                        <button class="family_checkbox_button">
-                            Пятый слайд</button>
-                    </li>
-                    <li class="family_checkbox_li">
-                        <button class="family_checkbox_button">
-                            Шестой слайд</button>
-                    </li>
-                </ul>
-            </div>
-                </section>
+                <div class="family_div_slide">
+                  <input type="radio" id="btn_1" name="toggle">
+                  <input type="radio" id="btn_2" name="toggle">
+                  <input type="radio" id="btn_3" name="toggle">
+                  <input type="radio" id="btn_4" name="toggle">
+                  <input type="radio" id="btn_5" name="toggle">
+                  <input type="radio" id="btn_6" name="toggle" checked>
+                  <div class="slider_controls">
+                    <label for="btn_1"></label>
+                    <label for="btn_2"></label>
+                    <label for="btn_3"></label>
+                    <label for="btn_4"></label>
+                    <label for="btn_5"></label>
+                    <label for="btn_6"></label>
+                  </div>
+                <div class="slides">
+                  <div class="slide"></div>
+                  <div class="slide"></div>
+                  <div class="slide"></div>
+                  <div class="slide"></div>
+                  <div class="slide"></div>
+                  <div class="slide"></div>
+                </div>
+              </div>
+            </section>
             <section class="pick_ap_checkbox">
                 <h2>Подобрать персонал</h2>
                 <div class="pick_ap_form_div">
@@ -228,25 +217,25 @@
             </section>
         </main>
         <footer class="main-footer">
-        <ul class="main-footer_bottom_menu">
-            <li><a href="index.html">Главная</a></li>
-            <li><a href="/pages/pick_up_staff.html">Подобрать персонал</a></li>
-            <li><a href="index.html">Цены</a></li>
-            <li><a href="index.html">Главная</a></li>
-            <li><a href="index.htm.">Подобрать персонал</a></li>
-            <li><a href="index.html">Цены</a></li>
-        </ul>
-        <div class="main-footer_bottom" >
-            <p class="telephon">8(4872)31-13-45</p> 
-            <p class="small_text">Разработка и продвижение сайта компанией «Юни Веб»- 
-                <a class="small_logo" href="https://uniofweb.ru/">
-                    <img class="logo_UW" src="img/logo_UW.png" width="70" 
-                    height="26" alt="logo_UW" >
-                    <span class="visually-hidden">Юни Веб</span>
-                </a>
-            </p>
-        </div>
-        </footer> 
+            <ul class="main-footer_bottom_menu">
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="/pages/pick_up_staff.html">Подобрать персонал</a></li>
+                <li><a href="index.html">Цены</a></li>
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="index.htm.">Подобрать персонал</a></li>
+                <li><a href="index.html">Цены</a></li>
+            </ul>
+            <div class="main-footer_bottom" >
+                <p class="telephon">8(4872)31-13-45</p>
+                <p class="small_text">Разработка и продвижение сайта компанией «Юни Веб»-
+                    <a class="small_logo" href="https://uniofweb.ru/">
+                            <img class="logo_UW" src="../img/logo_UW.png" width="70"
+                            height="26" alt="logo_UW" >
+                        <span class="visually-hidden">Юни Веб</span>
+                    </a>
+                </p>
+            </div>
+            </footer> 
     </div>  
 </body>
 </html>
